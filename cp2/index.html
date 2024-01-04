@@ -1,0 +1,114 @@
+<!--
+  ***
+  Name: Akira Tran
+  This is wepbage that contains my favorite movies, a random movie generator, and a place
+  to create your movie list. Every favorite movie has description and a link to a the trailer.
+  The random movie generator gives an image of a movie upon clicking the Random Generator button.
+  The create movie list takes in the movie title and the rating and displays it on the same
+  wepage below upon clicking the add button.
+  ***
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Coda+Caption:wght@800&family=Share+Tech+Mono&family=Tilt+Prism&display=swap" rel="stylesheet">
+  <title>MoviesCP2</title>
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html">Movies</a></h1>
+    <h1><a href="#make-list">Create Movie List</a></h1>
+  </header>
+
+  <section id="recomend-container">
+    <section class="movies-list">
+      <div class="movie-info">
+        <h2>Scarface</h2>
+        <img src="img/scarface.jpeg" alt="tonymontana">
+        <p>Genere: Crime, Drugs, Action</p>
+        <p>Release Date: December 9th, 1983</p>
+        <p>Rating: 10/10</p>
+        <a href="https://www.youtube.com/watch?v=cv276Wg3e7I&ab_channel=RottenTomatoesTrailers" target="_blank">Watch Trailer Here</a>
+      </div>
+
+      <div class="movie-info">
+        <h2>Interstellar</h2>
+        <img src="img/interstellar.webp" alt="intersetellarMovie">
+        <p>Genere: Adventure, Space, Drama</p>
+        <p>Release Date: October 26, 2014</p>
+        <p class="rating">Rating: 9/10</p>
+        <a href="https://www.youtube.com/watch?v=2LqzF5WauAw&ab_channel=InterstellarMovie" target="_blank">Watch Trailer Here</a>
+      </div>
+
+      <div class="movie-info">
+        <h2>Wolf of Wall Street</h2>
+        <img src="img/wolfofwalstreet.webp" alt="wolfmovie">
+        <p>Genere: Business, Comedy, Drama</p>
+        <p>Release Date: December 25, 2013</p>
+        <p>Rating: 8/10</p>
+        <a href="https://www.youtube.com/watch?v=iszwuX1AK6A&ab_channel=ParamountPictures" target="_blank">Watch Trailer Here</a>
+      </div>
+
+      <div class="movie-info">
+        <h2>Django Unchained</h2>
+        <img src="img/django.jpeg" alt="djangomovie">
+        <p>Genere: Western, Action, Drama</p>
+        <p>Release Date: December 25, 2012</p>
+        <p>Rating: 8/10</p>
+        <a href="https://www.youtube.com/watch?v=0fUCuvNlOCg&ab_channel=RottenTomatoesTrailers" target="_blank">Watch Trailer Here</a>
+      </div>
+
+      <div class="movie-info">
+        <h2>Everything Every Where All at Once</h2>
+        <img src="img/everythingeverywhere.webp" alt="everythingeverywhere">
+        <p>Genere: Comedy, Action, SciFi</p>
+        <p>Release Date: March 11, 2022</p>
+        <p>Rating: 8/10</p>
+        <a href="https://www.youtube.com/watch?v=wxN1T1uxQ2g&ab_channel=A24" target="_blank">Watch Trailer Here</a>
+      </div>
+
+      <div class="movie-info">
+        <h2>Black Panther</h2>
+        <img src="img/blackpanther.jpeg" alt="blackpanther">
+        <p>Genere: Action, Drama, Comedy</p>
+        <p>Release Date: Febuary 16, 2018</p>
+        <p>Rating: 7/10</p>
+        <a href="https://www.youtube.com/watch?v=xjDjIWPwcPU&ab_channel=MarvelEntertainment" target="_blank">Watch Trailer Here</a>
+      </div>
+
+    </section>
+  </section>
+
+  <section id="movie-generator">
+    <h2>Random Movie Generator</h2>
+    <img src="img/mystery-movie.webp" alt="mystery" id="movie-box" class="dotted dashed">
+  </section>
+
+  <section id="btn">
+    <button id="button">Random Generator</button>
+  </section>
+
+  <section id="make-list">
+    <h2>Create Movie List</h2>
+    <label for="movie-title">Movie Title</label>
+    <input type="text" id="movie-title">
+    <label for="rating">Your Rating</label>
+    <input type="number" id="rating">
+    <button id="list-btn">add</button>
+  </section>
+
+  <ol id="movie-list">
+  </ol>
+
+</body>
+</html>
+
